@@ -97,11 +97,11 @@ public class HexGenerate : MonoBehaviour
 		hexes[column, row] = h;
 		
 	
-   	   	Vector3 pos = h.PositionFromCamera(
-   	   	Camera.main.transform.position,
-   	   	numRows,
-   	   	numColumns
-   	   	);
+   	   	// Vector3 pos = h.PositionFromCamera(
+   	   	// Camera.main.transform.position,
+   	   	// numRows,
+   	   	// numColumns
+   	   	// );
    	   	
    	   	
    	   	GameObject hexGo = (GameObject)Instantiate(
@@ -139,7 +139,7 @@ public class HexGenerate : MonoBehaviour
    	   {
 
 		Hex h = hexes[column, row];
-        Debug.Log(h)
+        Debug.Log(h);
 		GameObject hexGo = hexToGameObjectMap[h];
 
         MeshRenderer mr = hexGo.GetComponentInChildren<MeshRenderer>();

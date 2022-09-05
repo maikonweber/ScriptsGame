@@ -10,7 +10,6 @@ public class cameraControler : MonoBehaviour {
     }
 
     float moveSpeed = 3.5f;
-    
     // Update is called once per frame
     void Update () {
         
